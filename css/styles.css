@@ -1,0 +1,57 @@
+body {
+    background-color: #e6e6e6;
+}
+
+.inner-container {
+    padding: 16px;
+}
+
+/* Typography */
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    margin-bottom: 24px;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px #cbcbd1;
+    color: #c14745;
+    margin-bottom: 24px;
+}
+
+/* Main */
+.col {
+    background-color: #ffffff;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.col img {
+    /* images are on the left side and text is on the right. The images takes up 40% and the text 60%. */
+    margin-bottom: 24px;
+    width: 40%; 
+}
+h3,
+p {
+    text-align: left;
+    padding-left: 170px;
+}
+
+@media only screen and (min-width: 975px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* add 2% gutter spacing between the columns */
+    .col {
+        width: calc(96%/3);
+    }
+}
